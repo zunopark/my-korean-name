@@ -1,0 +1,45 @@
+.switch {
+  display: flex;
+  flex-direction: row;
+  background-color: #ecf0f1;
+  width: 200px;
+  input {
+    position: absolute;
+    visibility: hidden;
+  }
+  label {
+    background-color: transparent;
+    color: #95a5a6;
+    height: 50px;
+    width: 100px;
+    font-size: 30px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 1;
+    transition: color 500ms ease;
+  }
+}
+
+.switch-bg {
+  position: absolute;
+  height: 50px;
+  width: 100px;
+  background-color: #2ecc71;
+  z-index: 0;
+  transition: transform 500ms ease-out;
+}
+
+#left-switch:checked ~ .switch-bg {
+  transform: translateX(0%);
+}
+
+#right-switch:checked ~ .switch-bg {
+  transform: translateX(100%);
+}
+
+input:checked + label {
+  color: #ecf0f1;
+}

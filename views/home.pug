@@ -1,0 +1,21 @@
+extends layouts/main
+
+block content
+    .title Get your Korean Name!
+    
+    form#jsBirth(action=routes.submit, method="post")
+        input#left-switch(type="radio", name="gender", value="male")
+        label(for="left-switch") Male
+        input#right-switch(type="radio", name="gender", value="female")
+        label(for="right-switch") Female
+        .switch-bg
+        input(type="text" name="day" placeholder="31" id="birthday-day")
+        input(type="text" name="month" placeholder="08" id="birthday-month")
+        input(type="text" name="year" placeholder="1990" id="birthday-year")
+        input(type="submit", value="What is your korean name?")
+
+    .description asfjsdfjkshflaksuvbaskulshadfhaeoibvsjdbsakdvhausebvuskdbvjsa
+
+
+
+
