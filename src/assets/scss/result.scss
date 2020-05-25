@@ -1,8 +1,13 @@
-@font-face { font-family: 'SDMiSaeng'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/SDMiSaeng.woff') format('woff'); font-weight: normal; font-style: normal; }
+@font-face {
+  font-family: "SDMiSaeng";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/SDMiSaeng.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
 
 .content {
   font: 400 1em/1.5 "Neuton";
-  background: white;
   color: black;
   text-align: center;
   margin: 0;
@@ -10,6 +15,7 @@
   transform: translateY(20px);
   opacity: 0;
   animation: appear 2.7s forwards;
+  width: 100%;
 }
 
 @keyframes appear {
@@ -26,9 +32,10 @@ p {
   letter-spacing: 0.3em;
   display: inline-block;
   border: 4px double black;
+  text-align: center;
   border-width: 4px 0;
   padding: 1.5em 0em;
-  width: 40em;
+  width: 100%;
 
   span {
     font: 100 4em/1 "SDMiSaeng", sans-serif;
@@ -36,8 +43,6 @@ p {
     padding: 0.25em 0 0.325em;
     display: block;
     margin: 0 auto;
-
-
   }
 }
 
@@ -59,32 +64,32 @@ p {
 }
 
 // 5, SE
-@media all and (min-device-width:320px) and (min-device-height:568px){
-  .content {
-    width:320px;
-  }
+@media all and (min-device-width: 320px) and (min-device-height: 568px) {
+  // .content {
+  //   width: 320px;
+  // }
   p {
     letter-spacing: 0.01em;
-    width:320px;
+    width: 320px;
   }
 }
 
 // 6,7,8
-@media all and (min-device-width:375px) and (min-device-height:667px){
-  .content {
-    width:375px
-  }
+@media all and (min-device-width: 375px) and (min-device-height: 667px) {
+  // .content {
+  //   width: 300px;
+  // }
   p {
     letter-spacing: 0.07em;
-    width: 375px;
+    width: 300px;
   }
 }
 
 //678 plus
-@media all and (min-device-width:414px) and (min-device-height:736px){
-  .content {
-    width:414px
-  }
+@media all and (min-device-width: 414px) and (min-device-height: 736px) {
+  // .content {
+  //   width: 414px;
+  // }
   p {
     letter-spacing: 0.08em;
     width: 414px;
@@ -92,10 +97,10 @@ p {
 }
 
 // x
-@media all and (min-device-width:375px) and (min-device-height:812px){
-  .content {
-    width:375px;
-  }
+@media all and (min-device-width: 375px) and (min-device-height: 812px) {
+  // .content {
+  //   width: 100%;
+  // }
   p {
     letter-spacing: 0.07em;
     width: 375px;
@@ -103,10 +108,10 @@ p {
 }
 
 // ipad
-@media all and (min-device-width:768px) and (min-device-height:1024px){
-  .content {
-    width:768px;
-  }
+@media all and (min-device-width: 768px) and (min-device-height: 1024px) {
+  // .content {
+  //   width: 768px;
+  // }
   p {
     letter-spacing: 0.4em;
     width: 768px;
@@ -115,10 +120,10 @@ p {
 }
 
 // ipad pro
-@media all and (min-device-width:1024px) and (min-device-height:1366px){
-  .content {
-    width:1024px;
-  }
+@media all and (min-device-width: 1024px) and (min-device-height: 1366px) {
+  // .content {
+  //   width: 1024px;
+  // }
   p {
     letter-spacing: 0.4em;
     width: 1024px;

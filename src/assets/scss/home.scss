@@ -21,8 +21,10 @@ main {
 
 .description {
   margin-top: 20px;
-  font-size: 25px;
+  font-size: 18px;
   font-weight: 300;
+  padding: 0 20px;
+  text-align: center;
 }
 
 .form {
@@ -57,8 +59,12 @@ main {
 
 .name-description {
   border-top: 5px solid #e2ebff;
-  padding: 30px 0 0 0;
+  padding: 30px 10px 0 10px;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 15px;
   text-align: center;
+}
+
+* {
+  box-sizing: border-box;
 }
