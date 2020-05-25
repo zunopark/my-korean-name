@@ -7,13 +7,14 @@ html(lang="en")
         title #{pageTitle} | Krean Name
         link(rel="stylesheet", href="/static/styles.css")
         //- <!-- Go to www.addthis.com/dashboard to customize your tools --> 
-        script(type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5ecb4202cc344f9c")
+        //- script(type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5ecb4202cc344f9c")
+        <script data-ad-client="ca-pub-5426206369408625" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     body
         include ../partials/header
         main
             block content
         include ../partials/footer
-
-
+        //- <!-- Go to www.addthis.com/dashboard to customize your tools --> 
+        <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5ecb4202cc344f9c"></script>
 
         script(src="/static/main.js")
