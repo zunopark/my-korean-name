@@ -1,0 +1,24 @@
+.header {
+  display: flex;
+  width: 100%;
+  background-color: #3b5998;
+  align-items: center;
+  font-size: 20px;
+  padding: 20px 10px;
+  font-weight: 800;
+
+  .header__column {
+    color: white;
+    i {
+      font-size: 25px;
+      margin: 0 10px;
+    }
+
+    a {
+      text-decoration: none;
+      &:visited {
+        color: white;
+      }
+    }
+  }
+}

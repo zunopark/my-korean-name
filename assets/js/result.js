@@ -1,30 +1,21 @@
-import {
-  yearFemaleStorage,
-  yearMaleStorage,
-  monthStorage,
-  dayStorage,
-} from "./storage";
+const resultContent = document.querySelector(`.content`);
+const loading = document.querySelector(`.loading-wrap`);
 
-const result = document.querySelector(`#jsResultDate`);
-const koreanName = document.querySelector(`#jsKoreanName`);
-
+function addBlock(e) {
+  e.classList.add("displayBlock");
+}
+function removeBlock(e) {
+  e.classList.remove("displayBlock");
+}
 function init() {
-  const splitResult = result.innerHTML.split("/");
-  const dayResult = parseInt(splitResult[0]);
-  const monthResult = parseInt(splitResult[1]);
-  const yearResult = parseInt(splitResult[2]);
-  console.log(monthResult, dayResult, yearResult);
-  const first = monthStorage[monthResult - 1];
-  const second = dayStorage[dayResult - 1];
-  if (splitResult[3] === "male") {
-    const third = yearMaleStorage[yearResult % 10];
-    koreanName.innerHTML = `${first}${second}${third} 입니다.`;
-  } else {
-    const third = yearFemaleStorage[yearResult % 10];
-    koreanName.innerHTML = `${first}${second}${third} 입니다.`;
-  }
+  setTimeout(function () {
+    resultContent.classList.remove("displayBlock");
+  }, 2500);
+  setTimeout(function () {
+    loading.classList.add("displayBlock");
+  }, 2500);
 }
 
-if (result) {
+if (resultContent) {
   init();
 }

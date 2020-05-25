@@ -13,6 +13,7 @@ app.set(`view engine`, "pug");
 
 // static 폴더 추가하여 css, js 적용
 app.use("/static", express.static("static"));
+app.use("/storage", express.static("storage"));
 
 // middleware 설정
 app.use(helmet());

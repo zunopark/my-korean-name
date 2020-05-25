@@ -1,0 +1,84 @@
+.content {
+  font: 400 1em/1.5 "Neuton";
+  background: white;
+  color: black;
+  text-align: center;
+  margin: 0;
+  padding: 10px;
+  transform: translateY(20px);
+  opacity: 0;
+  animation: appear 2.7s forwards;
+}
+
+@keyframes appear {
+  from {
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+p {
+  text-transform: lowercase;
+  letter-spacing: 0.5em;
+  display: inline-block;
+  border: 4px double black;
+  border-width: 4px 0;
+  padding: 1.5em 0em;
+  width: 40em;
+
+  span {
+    font: 700 4em/1 "Oswald", sans-serif;
+    letter-spacing: 0;
+    padding: 0.25em 0 0.325em;
+    display: block;
+    margin: 0 auto;
+    text-shadow: 0 0 80px rgba(255, 255, 255, 0.5);
+
+    /* Clip Background Image */
+
+    background: url(http://f.cl.ly/items/010q3E1u3p2Q0j1L1S1o/animated_text_fill.png)
+      repeat-y;
+    -webkit-background-clip: text;
+    background-clip: text;
+
+    /* Animate Background Image */
+
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: aitf 80s linear infinite;
+
+    /* Activate hardware acceleration for smoother animations */
+
+    -webkit-transform: translate3d(0, 0, 0);
+    -webkit-backface-visibility: hidden;
+  }
+}
+
+/* Animate Background Image */
+
+@-webkit-keyframes aitf {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+// Copyright (c) 2020 by Daniel Riemer (https://codepen.io/zitrusfrisch/pen/fjbal)
+// Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+// The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+.displayBlock {
+  display: none;
+}
+
+.displayLoading {
+  visibility: hidden;
+}
+
+.social__share {
+  margin-top: 20px;
+}

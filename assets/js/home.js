@@ -1,5 +1,3 @@
-import "./storage";
-
 const form = document.querySelector(`#jsBirth`);
 const gender = document.querySelector(`.switch`);
 

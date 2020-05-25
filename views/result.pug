@@ -1,5 +1,20 @@
 extends layouts/main
 
 block content
-    span#jsResultDate #{month}/#{day}/#{year}/#{gender}
-    span#jsKoreanName koreanName
+    .content.displayBlock
+        <p>#{description}<span>#{name}</span>[#{pronunciation}]</p>
+
+        //- <!-- Go to www.addthis.com/dashboard to customize your tools -->
+        .social__share Like your korean-name? <br> Share it with your friends!
+            .addthis_inline_share_toolbox
+            
+    .loading-wrap
+        .loading-background
+            .loading
+                .bar
+                .bar
+                .bar
+                .bar
+                .bar
+        span Searching for your name
+        

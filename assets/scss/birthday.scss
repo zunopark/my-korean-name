@@ -6,18 +6,17 @@ $facebook_gray-darken: darken($facebook_gray, 10%);
 
 .input-style {
   font-family: "Roboto", sans-serif;
-  margin-top: 6px;
-  width: 88%;
-  margin-left: 6%;
-  margin-right: 6%;
   background: white;
+  margin: 0 5px;
   padding: 6px 8px 4px 8px;
-  font-size: 16px;
-  border-radius: 2px;
+  font-size: 20px;
+  border-radius: 10px;
   border: $facebook_gray 1px solid;
   box-sizing: border-box;
   line-height: 20px;
   outline: none;
+  margin-bottom: 10px;
+
   &::-webkit-input-placeholder {
     color: $facebook_gray;
   }
@@ -31,19 +30,16 @@ $facebook_gray-darken: darken($facebook_gray, 10%);
 
 input#birthday-day {
   @extend .input-style;
-  width: 22%;
-  display: inline-block;
-  margin-right: 0;
+  text-align: center;
+  width: 70px;
 }
 input#birthday-month {
   @extend .input-style;
-  width: 22%;
-  display: inline-block;
-  margin: 0;
+  width: 70px;
+  text-align: center;
 }
 input#birthday-year {
   @extend .input-style;
-  width: 41%;
-  display: inline-block;
-  margin-left: 0;
+  text-align: center;
+  width: 100px;
 }
