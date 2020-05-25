@@ -6,6 +6,8 @@
   font-style: normal;
 }
 
+@font-face { font-family: 'JSDongkang-Regular'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/JSDongkang-RegularA1.woff') format('woff'); font-weight: normal; font-style: normal; }
+
 .content {
   font: 400 1em/1.5 "Neuton";
   color: black;
@@ -44,6 +46,18 @@ p {
     display: block;
     margin: 0 auto;
   }
+}
+
+.discord{
+  i{
+    font-size: 50px;
+    margin-top: 15px;
+  }
+}
+
+.desc__name{
+  font-family: "JSDongkang-Regular";
+  text-shadow: 1px 1px 1px gray;
 }
 
 // Copyright (c) 2020 by Daniel Riemer (https://codepen.io/zitrusfrisch/pen/fjbal)

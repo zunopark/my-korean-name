@@ -5,8 +5,9 @@ block content
         <p>This is your first Korean name!<span>#{name}</span>[#{pronunciation}]</p>
 
         //- <!-- Go to www.addthis.com/dashboard to customize your tools -->
-        .social__share #{name} means #{description} in English.<br>Like your korean-name? Share it with your friends!
-            .addthis_inline_share_toolbox
+        .social__share <span class="desc__name">#{name}</span> means #{description} in English.<br>
+            //- .addthis_inline_share_toolbox
+            .discord <a href="#"><i class="fab fa-discord"></i></a>
             
     .loading-wrap
         .loading-background
