@@ -4,9 +4,15 @@
   "description": "what was my previous life?",
   "main": "index.js",
   "scripts": {
-    "dev:server": "nodemon --exec babel-node init.js --delay 0.5",
-    "dev:assets": "WEBPACK_ENV=development webpack -w",
-    "build:assets": "WEBPACK_ENV=production webpack"
+    "dev:server": "nodemon --exec babel-node src/init.js --delay 0.5",
+    "dev:assets": "cd src && WEBPACK_ENV=development webpack -w",
+    "build:assets": "cd src && WEBPACK_ENV=production webpack",
+    "build:server": "babel src --out-dir build --ignore 'src/assets','src/static','src/webpack.config.js'",
+    "copyAll": "cp -R src/static build && cp -R src/views build",
+    "build": "npm run build:server && npm run build:assets && npm run copyAll",
+    "prebuild": "rm -rf build",
+    "start": "node build/init.js",
+    "prestart": "npm run build"
   },
   "author": "myself",
   "license": "ISC",
@@ -33,6 +39,7 @@
     "webpack-cli": "^3.3.11"
   },
   "devDependencies": {
+    "@babel/cli": "^7.8.4",
     "nodemon": "^2.0.4"
   },
   "repository": {
