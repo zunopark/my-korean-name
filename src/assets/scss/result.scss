@@ -1,10 +1,12 @@
+@font-face { font-family: 'SDMiSaeng'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/SDMiSaeng.woff') format('woff'); font-weight: normal; font-style: normal; }
+
 .content {
   font: 400 1em/1.5 "Neuton";
   background: white;
   color: black;
   text-align: center;
   margin: 0;
-  padding: 10px;
+  padding-top: 10px;
   transform: translateY(20px);
   opacity: 0;
   animation: appear 2.7s forwards;
@@ -20,8 +22,8 @@
 }
 
 p {
-  text-transform: lowercase;
-  letter-spacing: 0.5em;
+  // text-transform: lowercase;
+  letter-spacing: 0.3em;
   display: inline-block;
   border: 4px double black;
   border-width: 4px 0;
@@ -29,40 +31,13 @@ p {
   width: 40em;
 
   span {
-    font: 700 4em/1 "Oswald", sans-serif;
-    letter-spacing: 0;
+    font: 100 4em/1 "SDMiSaeng", sans-serif;
+    letter-spacing: 0.1em;
     padding: 0.25em 0 0.325em;
     display: block;
     margin: 0 auto;
-    text-shadow: 0 0 80px rgba(255, 255, 255, 0.5);
 
-    /* Clip Background Image */
 
-    background: url(http://f.cl.ly/items/010q3E1u3p2Q0j1L1S1o/animated_text_fill.png)
-      repeat-y;
-    -webkit-background-clip: text;
-    background-clip: text;
-
-    /* Animate Background Image */
-
-    -webkit-text-fill-color: transparent;
-    -webkit-animation: aitf 80s linear infinite;
-
-    /* Activate hardware acceleration for smoother animations */
-
-    -webkit-transform: translate3d(0, 0, 0);
-    -webkit-backface-visibility: hidden;
-  }
-}
-
-/* Animate Background Image */
-
-@-webkit-keyframes aitf {
-  0% {
-    background-position: 0% 50%;
-  }
-  100% {
-    background-position: 100% 50%;
   }
 }
 
@@ -81,4 +56,72 @@ p {
 
 .social__share {
   margin-top: 20px;
+}
+
+// 5, SE
+@media all and (min-device-width:320px) and (min-device-height:568px){
+  .content {
+    width:320px;
+  }
+  p {
+    letter-spacing: 0.01em;
+    width:320px;
+  }
+}
+
+// 6,7,8
+@media all and (min-device-width:375px) and (min-device-height:667px){
+  .content {
+    width:375px
+  }
+  p {
+    letter-spacing: 0.07em;
+    width: 375px;
+  }
+}
+
+//678 plus
+@media all and (min-device-width:414px) and (min-device-height:736px){
+  .content {
+    width:414px
+  }
+  p {
+    letter-spacing: 0.08em;
+    width: 414px;
+  }
+}
+
+// x
+@media all and (min-device-width:375px) and (min-device-height:812px){
+  .content {
+    width:375px;
+  }
+  p {
+    letter-spacing: 0.07em;
+    width: 375px;
+  }
+}
+
+// ipad
+@media all and (min-device-width:768px) and (min-device-height:1024px){
+  .content {
+    width:768px;
+  }
+  p {
+    letter-spacing: 0.4em;
+    width: 768px;
+    font-size: 1.2em;
+  }
+}
+
+// ipad pro
+@media all and (min-device-width:1024px) and (min-device-height:1366px){
+  .content {
+    width:1024px;
+  }
+  p {
+    letter-spacing: 0.4em;
+    width: 1024px;
+    font-size: 1.5em;
+  }
 }
