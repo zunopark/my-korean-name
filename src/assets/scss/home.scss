@@ -7,8 +7,9 @@ main {
 }
 
 .title {
+  text-align: center;
   margin-top: 60px;
-  font-size: 40px;
+  font-size: 30px;
   font-weight: 800;
   text-shadow: 0 1px 0 hsl(174, 5%, 80%), 0 2px 0 hsl(174, 5%, 75%),
     0 3px 0 hsl(174, 5%, 70%), 0 4px 0 hsl(174, 5%, 66%),
@@ -21,7 +22,7 @@ main {
 
 .description {
   margin-top: 20px;
-  font-size: 18px;
+  font-size: 15px;
   font-weight: 300;
   padding: 0 20px;
   text-align: center;
@@ -31,7 +32,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 50%;
+  width: 100%;
   margin-top: 30px;
   .switch {
     margin-bottom: 30px;
@@ -46,6 +47,7 @@ main {
   }
   .error {
     color: red;
+    font-size: 15px;
   }
 }
 

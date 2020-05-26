@@ -1,8 +1,8 @@
 extends layouts/main
 
 block content
-    .title KOREAN NAME
-    .description Make your first Korean Name by your birthday
+    .title Korean Name Generator
+    .description Get your unique Korean name with your birthday
     
     form.form#jsBirth(action=routes.submit, method="post")
         span Select your gender
@@ -14,12 +14,12 @@ block content
             .switch-bg
         span Put your birth
         .date
-            input(type="text" name="day" maxlength="2" size="2" placeholder="DD" id="birthday-day")
+            input(type="number" name="day" min="1" max="31" placeholder="DD" id="birthday-day")
             span .
-            input(type="text" name="month" maxlength="2" size="2" placeholder="MM" id="birthday-month")
+            input(type="number" name="month" min="1" max="12" placeholder="MM" id="birthday-month")
             span .
-            input(type="text" name="year" maxlength="4" size="4" placeholder="YYYY" id="birthday-year")
-        input.bubbly-button(type="submit", value="GET NOW!")
+            input(type="number" name="year" min="1900" max="2020" placeholder="YYYY" id="birthday-year")
+        input.bubbly-button(type="submit", value="What is my Korean name?")
 
 
     .name-description Most of the Korean names consist of three syllables <br>(sometimes two or four).<br>Each syllable represents a different meaning, and they combined to create one single signification.

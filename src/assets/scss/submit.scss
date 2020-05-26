@@ -7,7 +7,7 @@ $baby-blue: #f8faff;
   display: inline-block;
   font-size: 20px;
   padding: 15px 30px;
-  margin-top: 10px;
+  margin-top: 20px;
   margin-bottom: 30px;
   -webkit-appearance: none;
   appearance: none;
@@ -19,7 +19,7 @@ $baby-blue: #f8faff;
   position: relative;
   transition: transform ease-in 0.1s, box-shadow ease-in 0.25s;
   box-shadow: 0 2px 25px rgba(59, 89, 152, 0.5);
-  animation: button-move 2s ease-in-out infinite;
+  animation: button-move 1.5s ease-in-out infinite;
   &:focus {
     outline: 0;
   }
@@ -29,13 +29,13 @@ $baby-blue: #f8faff;
   0% {
   }
   10% {
-    transform: rotate(5deg);
+    transform: rotate(3deg);
   }
   20% {
-    transform: rotate(-5deg);
+    transform: rotate(-3deg);
   }
   30% {
-    transform: rotate(5deg);
+    transform: rotate(3deg);
   }
   40% {
     transform: rotate(0deg);
