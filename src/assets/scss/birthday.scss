@@ -5,6 +5,7 @@ $facebook_green: #69a74e;
 $facebook_gray-darken: darken($facebook_gray, 10%);
 
 .input-style {
+  color: $facebook_gray;
   font-family: "Roboto", sans-serif;
   background: white;
   margin: 0 5px;
@@ -28,17 +29,17 @@ $facebook_gray-darken: darken($facebook_gray, 10%);
   }
 }
 
-input#birthday-day {
+select#birthday-day {
   @extend .input-style;
   text-align: center;
   width: 70px;
 }
-input#birthday-month {
+select#birthday-month {
   @extend .input-style;
   width: 70px;
   text-align: center;
 }
-input#birthday-year {
+select#birthday-year {
   @extend .input-style;
   text-align: center;
   width: 100px;
