@@ -14,11 +14,20 @@ block content
             .switch-bg
         span Put your birth
         .date
-            input(type="number" name="day" min="1" max="31" placeholder="DD" id="birthday-day")
+            select(name="day" min="1" max="31" placeholder="DD" id="birthday-day")
+                option(value="") DD
+                -for (let i = 1; i < 32; i++)
+                    option(value=i) #{i}
             span .
-            input(type="number" name="month" min="1" max="12" placeholder="MM" id="birthday-month")
+            select(name="month" min="1" max="12" placeholder="MM" id="birthday-month")
+                option(value="") MM
+                -for (let i = 1; i < 13; i++)
+                    option(value=i) #{i}
             span .
-            input(type="number" name="year" min="1900" max="2020" placeholder="YYYY" id="birthday-year")
+            select(name="year" min="1900" max="2020" placeholder="YYYY" id="birthday-year")
+                option(value="") YYYY
+                -for (let i = 1960; i < 2020; i++)
+                    option(value=i) #{i}
         span.error ❗️Write your birthday correctly
         span.error (DD=day MM=month YYYY=year)
         input.bubbly-button(type="submit", value="What is my Korean name?")
