@@ -36,6 +36,7 @@
 }
 
 p {
+  margin: 50px 0 20px 0;
   // text-transform: lowercase;
   letter-spacing: 0.3em;
   display: inline-block;
@@ -44,11 +45,13 @@ p {
   border-width: 4px 0;
   padding: 1.5em 0em;
   width: 100%;
+  padding: 30px 0;
+  font-size: 20px;
 
   span {
     font: 100 4em/1 "SDMiSaeng", sans-serif;
+    font-size: 100px;
     letter-spacing: 0.1em;
-    padding: 0.25em 0 0.325em;
     display: block;
     margin: 0 auto;
   }
@@ -57,22 +60,22 @@ p {
 .discord {
   text-decoration: none;
   color: black;
+
   .icon {
     i {
-      font-size: 50px;
+      font-size: 60px;
       margin-top: 15px;
       color: #6179c7;
     }
   }
   .ment {
     font-weight: 700;
-    font-size: 10px;
+    font-size: 15px;
   }
 }
 
 .desc__name {
   font-family: "JSDongkang-Regular";
-  text-shadow: 1px 1px 1px gray;
 }
 
 // Copyright (c) 2020 by Daniel Riemer (https://codepen.io/zitrusfrisch/pen/fjbal)
@@ -89,7 +92,18 @@ p {
 }
 
 .social__share {
-  margin-top: 20px;
+  padding: 0 30px;
+  .desc__name {
+    font-size: 20px;
+  }
+  .desc__desc {
+    font-size: 30px;
+    font-weight: 700;
+  }
+  .descrip {
+    font-size: 14px;
+    margin-bottom: 30px;
+  }
 }
 
 // 5, SE
@@ -99,7 +113,8 @@ p {
   // }
   p {
     letter-spacing: 0.01em;
-    width: 320px;
+    // width: 320px;
+    width: 100%;
   }
 }
 
@@ -110,7 +125,8 @@ p {
   // }
   p {
     letter-spacing: 0.07em;
-    width: 300px;
+    // width: 300px;
+    width: 100%;
   }
 }
 
@@ -121,7 +137,8 @@ p {
   // }
   p {
     letter-spacing: 0.08em;
-    width: 414px;
+    // width: 414px;
+    width: 100%;
   }
 }
 
@@ -132,7 +149,8 @@ p {
   // }
   p {
     letter-spacing: 0.07em;
-    width: 375px;
+    // width: 375px;
+    width: 100%;
   }
 }
 
@@ -155,7 +173,9 @@ p {
   // }
   p {
     letter-spacing: 0.4em;
-    width: 1024px;
+    // width: 1024px;
+    width: 100%;
+
     font-size: 1.5em;
   }
 }

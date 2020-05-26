@@ -2,15 +2,18 @@ extends layouts/main
 
 block content
     .content.displayBlock
-        <p>This is your first Korean name!<span>#{name}</span>[#{pronunciation}]</p>
+        <p>Your Korean name is<span>#{name}</span>[#{pronunciation}]</p>
 
         //- <!-- Go to www.addthis.com/dashboard to customize your tools -->
-        .social__share <span class="desc__name">#{name}</span> means #{description} in English.<br>
+        .social__share 
+            <div class="desc__name">Meaning of your name <br></div> 
+            <div class="desc__desc">"#{description}"<br></div>
+            <div class="descrip">(Every Korean name has their own meaning rooted from its Chinese character) </div>
             //- .addthis_inline_share_toolbox
             a.discord(href="https://discord.com/invite/nyzTvqK")
                 .icon
                     i.fab.fa-discord
-                .ment ↑ Korean Learning Community (with Ryan)
+                .ment Korean Learning Community (with Ryan)
             .join__ment Join with your korean-name!
             
     .loading-wrap
@@ -21,5 +24,5 @@ block content
                 .bar
                 .bar
                 .bar
-        span Searching for your name
+        span generating Korean power
         
