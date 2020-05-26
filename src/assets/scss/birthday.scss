@@ -5,7 +5,7 @@ $facebook_green: #69a74e;
 $facebook_gray-darken: darken($facebook_gray, 10%);
 
 .input-style {
-  color: $facebook_gray;
+  color: $facebook_blue;
   font-family: "Roboto", sans-serif;
   background: white;
   margin: 0 5px;
@@ -32,11 +32,11 @@ $facebook_gray-darken: darken($facebook_gray, 10%);
 select#birthday-day {
   @extend .input-style;
   text-align: center;
-  width: 70px;
+  width: 80px;
 }
 select#birthday-month {
   @extend .input-style;
-  width: 70px;
+  width: 80px;
   text-align: center;
 }
 select#birthday-year {
